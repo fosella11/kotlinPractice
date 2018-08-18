@@ -55,4 +55,14 @@ fun main (args : Array<String>){
     println("We can use this form to get values and use: First: $x , Second: $y ")
     println("Or we can use this form, basically First: "+ coordinatesOtherForm.first
             + " Second: "+ coordinatesOtherForm.second)
+
+    // If we need 3 values for example x,y,z We can use the Triple Similar to Pair
+
+    val coordinater3D = Triple(20, 30, 40)
+
+    val (x1, y1, z1) = coordinater3D
+
+    println("Coordinate 3D: First: ${coordinater3D.first}, Second: ${coordinater3D.second} , Third: ${coordinater3D.third} ")
+
+
 }
