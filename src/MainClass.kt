@@ -44,4 +44,15 @@ fun main (args : Array<String>){
     println(bigString)
 
 
+
+    //Pairs and Triples
+
+    val coordinates = Pair(3,5)
+    val coordinatesOtherForm = 3 to 5
+
+    val (x,y) = coordinates
+
+    println("We can use this form to get values and use: First: $x , Second: $y ")
+    println("Or we can use this form, basically First: "+ coordinatesOtherForm.first
+            + " Second: "+ coordinatesOtherForm.second)
 }
