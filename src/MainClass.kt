@@ -1,4 +1,4 @@
-fun main (args : Array<String>){
+fun main (args : Array<String>) {
 
     var a = 50
     val a1 = "fede"
@@ -6,10 +6,10 @@ fun main (args : Array<String>){
 
     var i = 0
     var j = 0
-    while (i<5){
+    while (i < 5) {
         i++
-        println("The number is :"+ i)
-        while (j<5){
+        println("The number is :" + i)
+        while (j < 5) {
             j++
             print(j)
         }
@@ -17,7 +17,7 @@ fun main (args : Array<String>){
     }
 
 
-    print("First lines on Kotlin !! :)"+"Var"+a+"Val: "+a1.compareTo("fede").toString())
+    print("First lines on Kotlin !! :)" + "Var" + a + "Val: " + a1.compareTo("fede").toString())
 
 
     //Multiline
@@ -44,17 +44,16 @@ fun main (args : Array<String>){
     println(bigString)
 
 
-
     //Pairs and Triples
 
-    val coordinates = Pair(3,5)
+    val coordinates = Pair(3, 5)
     val coordinatesOtherForm = 3 to 5
 
-    val (x,y) = coordinates
+    val (x, y) = coordinates
 
     println("We can use this form to get values and use: First: $x , Second: $y ")
-    println("Or we can use this form, basically First: "+ coordinatesOtherForm.first
-            + " Second: "+ coordinatesOtherForm.second)
+    println("Or we can use this form, basically First: " + coordinatesOtherForm.first
+            + " Second: " + coordinatesOtherForm.second)
 
     // If we need 3 values for example x,y,z We can use the Triple Similar to Pair
 
@@ -65,4 +64,26 @@ fun main (args : Array<String>){
     println("Coordinate 3D: First: ${coordinater3D.first}, Second: ${coordinater3D.second} , Third: ${coordinater3D.third} ")
 
 
+    //Conditionals If we want to check the number is multiple of 3 and use the Fizz to write multiples of 3 and Buzz to
+    //write multiples of 5 ... :)
+
+    println("""
+       ---------------- Test
+        --------------- Test
+        --------------- Fizz Buzz ------------------
+    """)
+
+    val testTo = 100
+
+    for (i in 0..testTo){
+    if (i % 5 == 0 && i % 3 == 0) {
+        print("$i is: Fizz & Buzz || ")
+    }else if (i % 3 == 0){
+        print("$i is: Fizz || ")
+    }else if (i % 5 == 0){
+        print("$i is: buzz || ")
+    }else{
+        print("$i isn't: FIZZ AND BUZZ || ")
+    }
+    }
 }
