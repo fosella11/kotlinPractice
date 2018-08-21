@@ -12,4 +12,25 @@ fun main (args : Array<String>){
         print("$i $response ||")
     }
 
+    println("""
+           Testing Calculator -----------------
+        """)
+
+    calculatorTwoNumbers("sum", 15, 15)
+    calculatorTwoNumbers("div", 15, 15)
+    calculatorTwoNumbers("sub", 15, 15)
+    calculatorTwoNumbers("mul", 15, 15)
+
+
+}
+//Do Functions! :)
+fun calculatorTwoNumbers(a: String, b: Int, c: Int){
+    val result = when{
+        a == "sum" ->  "The $a between $b and $c is: ${b + c}"
+        a == "sub" -> "The $a between $b and $c is: ${b - c}"
+        a == "mul" -> "The $a between $b and $c is: ${b * c}"
+        a == "div" -> "The $a between $b and $c is: ${b / c}"
+        else -> "Operation unknown"
+    }
+    println(result)
 }
