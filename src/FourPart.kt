@@ -1,7 +1,9 @@
 fun main (args: Array<String>) {
 
+    //First Define the function as variable
   var calculatorFun = ::calculatorTwoNumbersB
 
+    //Last step
     printerResultCalculators(calculatorFun, "sum",15,15)
 }
 
@@ -17,6 +19,10 @@ fun calculatorTwoNumbersB(a: String, b: Int, c: Int) : String{
     return result
 }
 
+//This is a form to declare and use the function like variable
+//
+//function :(s: String, a: Int, b: Int) -> String,s:String, a: Int, b: Int
+//
 fun printerResultCalculators(function :(s: String, a: Int, b: Int) -> String,s:String, a: Int, b: Int){
     println(function(s,a,b))
 }
